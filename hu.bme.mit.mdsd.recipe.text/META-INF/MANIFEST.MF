@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: hu.bme.mit.mdsd.recipe.text
+Bundle-ManifestVersion: 2
+Bundle-Name: hu.bme.mit.mdsd.recipe.text
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: hu.bme.mit.mdsd.recipe.text; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: hu.bme.mit.mdsd.recipe,
+ org.eclipse.xtext,
+ org.eclipse.xtext.xbase,
+ org.eclipse.equinox.common;bundle-version="3.5.0",
+ org.eclipse.xtext.xbase.lib;bundle-version="2.14.0",
+ org.eclipse.xtext.util,
+ org.antlr.runtime;bundle-version="[3.2.0,3.2.1)",
+ org.eclipse.xtend.lib;bundle-version="2.14.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Export-Package: hu.bme.mit.mdsd.recipe.text,
+ hu.bme.mit.mdsd.recipe.text.parser.antlr,
+ hu.bme.mit.mdsd.recipe.text.scoping,
+ hu.bme.mit.mdsd.recipe.text.formatting2,
+ hu.bme.mit.mdsd.recipe.text.validation,
+ hu.bme.mit.mdsd.recipe.text.parser.antlr.internal,
+ hu.bme.mit.mdsd.recipe.text.services,
+ hu.bme.mit.mdsd.recipe.text.serializer,
+ hu.bme.mit.mdsd.recipe.text.generator
+Import-Package: org.apache.log4j

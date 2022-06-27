@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/hu.bme.mit.mdsd.recipe/src" modelPluginID="hu.bme.mit.mdsd.recipe"
+    modelName="Recipe" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>recipe.ecore</foreignModel>
+  <genPackages prefix="Recipe" basePackage="hu.bme.mit.mdsd" disposableProviderFactory="true"
+      ecorePackage="recipe.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="recipe.ecore#//Unit">
+      <genEnumLiterals ecoreEnumLiteral="recipe.ecore#//Unit/DECAGRAM"/>
+      <genEnumLiterals ecoreEnumLiteral="recipe.ecore#//Unit/DECILITER"/>
+      <genEnumLiterals ecoreEnumLiteral="recipe.ecore#//Unit/PINCH"/>
+      <genEnumLiterals ecoreEnumLiteral="recipe.ecore#//Unit/PIECE"/>
+      <genEnumLiterals ecoreEnumLiteral="recipe.ecore#//Unit/TABLESPOON"/>
+      <genEnumLiterals ecoreEnumLiteral="recipe.ecore#//Unit/TEASPOON"/>
+      <genEnumLiterals ecoreEnumLiteral="recipe.ecore#//Unit/TO_TASTE"/>
+    </genEnums>
+    <genClasses ecoreClass="recipe.ecore#//Recipe">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference recipe.ecore#//Recipe/ingredients"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference recipe.ecore#//Recipe/tools"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference recipe.ecore#//Recipe/actions"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference recipe.ecore#//Recipe/relations"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference recipe.ecore#//Recipe/tempTriggers"/>
+    </genClasses>
+    <genClasses ecoreClass="recipe.ecore#//AtomicIngredient"/>
+    <genClasses image="false" ecoreClass="recipe.ecore#//Tool"/>
+    <genClasses ecoreClass="recipe.ecore#//Action"/>
+    <genClasses ecoreClass="recipe.ecore#//Container">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference recipe.ecore#//Container/capacity"/>
+    </genClasses>
+    <genClasses ecoreClass="recipe.ecore#//Transformer"/>
+    <genClasses image="false" ecoreClass="recipe.ecore#//Relation"/>
+    <genClasses ecoreClass="recipe.ecore#//ContainmentRelation">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference recipe.ecore#//ContainmentRelation/container"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference recipe.ecore#//ContainmentRelation/ingredient"/>
+    </genClasses>
+    <genClasses ecoreClass="recipe.ecore#//SuccessionRelation">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference recipe.ecore#//SuccessionRelation/next"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference recipe.ecore#//SuccessionRelation/prev"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference recipe.ecore#//SuccessionRelation/trigger"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="recipe.ecore#//Trigger"/>
+    <genClasses ecoreClass="recipe.ecore#//TimeTrigger">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute recipe.ecore#//TimeTrigger/minutes"/>
+    </genClasses>
+    <genClasses ecoreClass="recipe.ecore#//ConditionTrigger">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute recipe.ecore#//ConditionTrigger/condition"/>
+    </genClasses>
+    <genClasses ecoreClass="recipe.ecore#//Amount">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute recipe.ecore#//Amount/amount"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute recipe.ecore#//Amount/unit"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="recipe.ecore#//Ingredient">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference recipe.ecore#//Ingredient/amount"/>
+    </genClasses>
+    <genClasses ecoreClass="recipe.ecore#//CompositeIngredient"/>
+    <genClasses image="false" ecoreClass="recipe.ecore#//NamedElement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute recipe.ecore#//NamedElement/name"/>
+    </genClasses>
+    <genClasses ecoreClass="recipe.ecore#//StandardAction">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference recipe.ecore#//StandardAction/tool"/>
+    </genClasses>
+    <genClasses ecoreClass="recipe.ecore#//DeclSuccessionRelation">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference recipe.ecore#//DeclSuccessionRelation/declPrev"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference recipe.ecore#//DeclSuccessionRelation/declNext"/>
+    </genClasses>
+    <genClasses ecoreClass="recipe.ecore#//DeclContainmentRelation">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference recipe.ecore#//DeclContainmentRelation/declIngredient"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

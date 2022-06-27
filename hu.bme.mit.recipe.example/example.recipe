@@ -1,0 +1,28 @@
+// a recept neve:
+'Vegetable soup'
+     ----  // <-- ez nem kötelezõ ide
+     
+// egyszerűen deklarált ingredientek
+* 20 DECILITER water
+* 5 PIECE carrots
+* 2 PIECE white_carrots
+* 1 PIECE kohlrabi
+
+// egy container deklaráció (kapacitással)
+take Pot : 50 DECILITER
+
+// on the fly deklarált akciók
+{ ! cut_kohlrabi } -> { ! cut_carrots }
+
+// egy pár containment relation
+// on the fly ingredient deklarációval
+carrots => Pot
+kohlrabi => Pot
+white_carrots => Pot
+water => Pot
+1 PINCH salt => Pot
+1 PINCH pepper => Pot
+
+// még több akció deklaráció és sorrendezés
+(cut_carrots) -> (cook)
+(cook) --[when soft]-> { ! <Pot> serve }

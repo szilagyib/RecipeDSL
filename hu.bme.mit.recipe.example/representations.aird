@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:recipe="hu.bme.mit.mdsd.recipe" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+  <viewpoint:DAnalysis uid="_kjdfkLfdEeufAe1TlkgXpQ" selectedViews="_pJnyYLfdEeufAe1TlkgXpQ" version="14.3.1.202003261200">
+    <semanticResources>example.recipe</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" uid="_pJnyYLfdEeufAe1TlkgXpQ">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/hu.bme.mit.mdsd.recipe.design/description/recipe.odesign#//@ownedViewpoints[name='recipe']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_pbOfwLfdEeufAe1TlkgXpQ" name="new Recipe" repPath="#_pa4hgLfdEeufAe1TlkgXpQ" changeId="2b64d7bb-1cf6-49ff-ad94-642ceb9bff9d">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/hu.bme.mit.mdsd.recipe.design/description/recipe.odesign#//@ownedViewpoints[name='recipe']/@ownedRepresentations[name='Recipe']"/>
+        <target xmi:type="recipe:Recipe" href="example.recipe#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram uid="_pa4hgLfdEeufAe1TlkgXpQ">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_pb1jwLfdEeufAe1TlkgXpQ" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_pb2K0LfdEeufAe1TlkgXpQ" type="Sirius" element="_pa4hgLfdEeufAe1TlkgXpQ" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_pc8XALfdEeufAe1TlkgXpQ" type="2001" element="_pcKT4LfdEeufAe1TlkgXpQ">
+          <children xmi:type="notation:Node" xmi:id="_pdDEsLfdEeufAe1TlkgXpQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_pdDEsbfdEeufAe1TlkgXpQ" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_pdUKcLfdEeufAe1TlkgXpQ" type="3003" element="_pcOlULfdEeufAe1TlkgXpQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_pdUKcbfdEeufAe1TlkgXpQ" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pdUKcrfdEeufAe1TlkgXpQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_pc8XAbfdEeufAe1TlkgXpQ" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pc8XArfdEeufAe1TlkgXpQ" width="30" height="30"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_pdMOoLfdEeufAe1TlkgXpQ" type="2001" element="_pcaykLfdEeufAe1TlkgXpQ">
+          <children xmi:type="notation:Node" xmi:id="_pdNcwLfdEeufAe1TlkgXpQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_pdNcwbfdEeufAe1TlkgXpQ" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_pdUxgLfdEeufAe1TlkgXpQ" type="3003" element="_pccnwLfdEeufAe1TlkgXpQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_pdUxgbfdEeufAe1TlkgXpQ" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pdUxgrfdEeufAe1TlkgXpQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_pdMOobfdEeufAe1TlkgXpQ" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pdMOorfdEeufAe1TlkgXpQ" x="182" width="30" height="30"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_pdOD0LfdEeufAe1TlkgXpQ" type="2001" element="_pcec8LfdEeufAe1TlkgXpQ">
+          <children xmi:type="notation:Node" xmi:id="_pdP5ALfdEeufAe1TlkgXpQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_pdP5AbfdEeufAe1TlkgXpQ" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_pdV_oLfdEeufAe1TlkgXpQ" type="3016" element="_pcfEALfdEeufAe1TlkgXpQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_pdV_obfdEeufAe1TlkgXpQ" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pdV_orfdEeufAe1TlkgXpQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_pdOD0bfdEeufAe1TlkgXpQ" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pdOD0rfdEeufAe1TlkgXpQ" x="91" width="30" height="30"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_pdQgELfdEeufAe1TlkgXpQ" type="2001" element="_pcg5MLfdEeufAe1TlkgXpQ">
+          <children xmi:type="notation:Node" xmi:id="_pdRHILfdEeufAe1TlkgXpQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_pdRHIbfdEeufAe1TlkgXpQ" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_pdXNwLfdEeufAe1TlkgXpQ" type="3017" element="_pcg5MbfdEeufAe1TlkgXpQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_pdXNwbfdEeufAe1TlkgXpQ" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pdXNwrfdEeufAe1TlkgXpQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_pdQgEbfdEeufAe1TlkgXpQ" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pdQgErfdEeufAe1TlkgXpQ" x="42" y="91" width="30" height="30"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_pdRuMLfdEeufAe1TlkgXpQ" type="2001" element="_pchgQbfdEeufAe1TlkgXpQ">
+          <children xmi:type="notation:Node" xmi:id="_pdSVQLfdEeufAe1TlkgXpQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_pdSVQbfdEeufAe1TlkgXpQ" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_pdX00LfdEeufAe1TlkgXpQ" type="3017" element="_pciHULfdEeufAe1TlkgXpQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_pdX00bfdEeufAe1TlkgXpQ" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pdX00rfdEeufAe1TlkgXpQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_pdRuMbfdEeufAe1TlkgXpQ" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pdRuMrfdEeufAe1TlkgXpQ" x="133" y="91" width="30" height="30"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_MWQp0LffEeuQVo7iKFd5PQ" type="2001" element="_MWGRwLffEeuQVo7iKFd5PQ">
+          <children xmi:type="notation:Node" xmi:id="_MWYloLffEeuQVo7iKFd5PQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_MWYlobffEeuQVo7iKFd5PQ" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_MWesQLffEeuQVo7iKFd5PQ" type="3017" element="_MWGRwbffEeuQVo7iKFd5PQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_MWesQbffEeuQVo7iKFd5PQ" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MWesQrffEeuQVo7iKFd5PQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_MWQp0bffEeuQVo7iKFd5PQ" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MWQp0rffEeuQVo7iKFd5PQ" x="245" width="30" height="30"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_MWc3ELffEeuQVo7iKFd5PQ" type="2001" element="_MWHf4LffEeuQVo7iKFd5PQ">
+          <children xmi:type="notation:Node" xmi:id="_MWdeILffEeuQVo7iKFd5PQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_MWdeIbffEeuQVo7iKFd5PQ" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_MWfTULffEeuQVo7iKFd5PQ" type="3017" element="_MWHf4bffEeuQVo7iKFd5PQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_MWfTUbffEeuQVo7iKFd5PQ" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MWfTUrffEeuQVo7iKFd5PQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_MWc3EbffEeuQVo7iKFd5PQ" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MWc3ErffEeuQVo7iKFd5PQ" x="329" width="30" height="30"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_pb2K0bfdEeufAe1TlkgXpQ"/>
+        <edges xmi:type="notation:Edge" xmi:id="_pdmeULfdEeufAe1TlkgXpQ" type="4001" element="_pcnm4LfdEeufAe1TlkgXpQ" source="_pdQgELfdEeufAe1TlkgXpQ" target="_pdOD0LfdEeufAe1TlkgXpQ">
+          <children xmi:type="notation:Node" xmi:id="_pdnscLfdEeufAe1TlkgXpQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pdnscbfdEeufAe1TlkgXpQ" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_pdoTgLfdEeufAe1TlkgXpQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pdoTgbfdEeufAe1TlkgXpQ" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_pdo6kLfdEeufAe1TlkgXpQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pdo6kbfdEeufAe1TlkgXpQ" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_pdmeUbfdEeufAe1TlkgXpQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_pdmeUrfdEeufAe1TlkgXpQ" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_pdmeU7fdEeufAe1TlkgXpQ" points="[0, 0, -45, 60]$[45, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_pdyrkLfdEeufAe1TlkgXpQ" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_pdyrkbfdEeufAe1TlkgXpQ" id="(0.5,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_pdzSoLfdEeufAe1TlkgXpQ" type="4001" element="_pcpcELfdEeufAe1TlkgXpQ" source="_pdRuMLfdEeufAe1TlkgXpQ" target="_pdOD0LfdEeufAe1TlkgXpQ">
+          <children xmi:type="notation:Node" xmi:id="_pdz5sLfdEeufAe1TlkgXpQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pdz5sbfdEeufAe1TlkgXpQ" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_pdz5srfdEeufAe1TlkgXpQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pdz5s7fdEeufAe1TlkgXpQ" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_pdz5tLfdEeufAe1TlkgXpQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pdz5tbfdEeufAe1TlkgXpQ" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_pdzSobfdEeufAe1TlkgXpQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_pdzSorfdEeufAe1TlkgXpQ" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_pdzSo7fdEeufAe1TlkgXpQ" points="[0, 0, 45, 60]$[-45, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_pd0gwLfdEeufAe1TlkgXpQ" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_pd0gwbfdEeufAe1TlkgXpQ" id="(0.5,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_pd0gwrfdEeufAe1TlkgXpQ" type="4001" element="_pcqqMLfdEeufAe1TlkgXpQ" source="_pdQgELfdEeufAe1TlkgXpQ" target="_pc8XALfdEeufAe1TlkgXpQ">
+          <children xmi:type="notation:Node" xmi:id="_pd1H0LfdEeufAe1TlkgXpQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pd1H0bfdEeufAe1TlkgXpQ" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_pd1H0rfdEeufAe1TlkgXpQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pd1H07fdEeufAe1TlkgXpQ" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_pd1H1LfdEeufAe1TlkgXpQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pd1H1bfdEeufAe1TlkgXpQ" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_pd0gw7fdEeufAe1TlkgXpQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_pd0gxLfdEeufAe1TlkgXpQ" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_pd0gxbfdEeufAe1TlkgXpQ" points="[0, 0, 45, 60]$[-45, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_pd1u4LfdEeufAe1TlkgXpQ" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_pd1u4bfdEeufAe1TlkgXpQ" id="(0.5,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_pd2V8LfdEeufAe1TlkgXpQ" type="4001" element="_pcrRQrfdEeufAe1TlkgXpQ" source="_pdRuMLfdEeufAe1TlkgXpQ" target="_pdMOoLfdEeufAe1TlkgXpQ">
+          <children xmi:type="notation:Node" xmi:id="_pd29ALfdEeufAe1TlkgXpQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pd29AbfdEeufAe1TlkgXpQ" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_pd29ArfdEeufAe1TlkgXpQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pd29A7fdEeufAe1TlkgXpQ" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_pd29BLfdEeufAe1TlkgXpQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pd29BbfdEeufAe1TlkgXpQ" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_pd2V8bfdEeufAe1TlkgXpQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_pd2V8rfdEeufAe1TlkgXpQ" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_pd2V87fdEeufAe1TlkgXpQ" points="[0, 0, -45, 60]$[45, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_pd3kELfdEeufAe1TlkgXpQ" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_pd3kEbfdEeufAe1TlkgXpQ" id="(0.5,1.0)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_pctGcLfdEeufAe1TlkgXpQ" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_pctGcbfdEeufAe1TlkgXpQ"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_pcKT4LfdEeufAe1TlkgXpQ" name="eggs" incomingEdges="_pcqqMLfdEeufAe1TlkgXpQ" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="recipe:AtomicIngredient" href="example.recipe#//@ingredients.0"/>
+      <semanticElements xmi:type="recipe:AtomicIngredient" href="example.recipe#//@ingredients.0"/>
+      <ownedStyle xmi:type="diagram:Square" uid="_pcOlULfdEeufAe1TlkgXpQ" labelSize="12" borderSize="1" borderSizeComputationExpression="1" labelPosition="node" color="217,196,215">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/hu.bme.mit.mdsd.recipe.design/description/recipe.odesign#//@ownedViewpoints[name='recipe']/@ownedRepresentations[name='Recipe']/@defaultLayer/@nodeMappings[name='IngredientNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/hu.bme.mit.mdsd.recipe.design/description/recipe.odesign#//@ownedViewpoints[name='recipe']/@ownedRepresentations[name='Recipe']/@defaultLayer/@nodeMappings[name='IngredientNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_pcaykLfdEeufAe1TlkgXpQ" name="water" incomingEdges="_pcrRQrfdEeufAe1TlkgXpQ" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="recipe:AtomicIngredient" href="example.recipe#//@ingredients.1"/>
+      <semanticElements xmi:type="recipe:AtomicIngredient" href="example.recipe#//@ingredients.1"/>
+      <ownedStyle xmi:type="diagram:Square" uid="_pccnwLfdEeufAe1TlkgXpQ" labelSize="12" borderSize="1" borderSizeComputationExpression="1" labelPosition="node" color="217,196,215">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/hu.bme.mit.mdsd.recipe.design/description/recipe.odesign#//@ownedViewpoints[name='recipe']/@ownedRepresentations[name='Recipe']/@defaultLayer/@nodeMappings[name='IngredientNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/hu.bme.mit.mdsd.recipe.design/description/recipe.odesign#//@ownedViewpoints[name='recipe']/@ownedRepresentations[name='Recipe']/@defaultLayer/@nodeMappings[name='IngredientNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_pcec8LfdEeufAe1TlkgXpQ" name="Pot" incomingEdges="_pcnm4LfdEeufAe1TlkgXpQ _pcpcELfdEeufAe1TlkgXpQ" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="recipe:Container" href="example.recipe#//@tools.0"/>
+      <semanticElements xmi:type="recipe:Container" href="example.recipe#//@tools.0"/>
+      <ownedStyle xmi:type="diagram:Ellipse" uid="_pcfEALfdEeufAe1TlkgXpQ" labelSize="12" borderSize="1" borderSizeComputationExpression="1" labelPosition="node" color="255,245,181">
+        <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/hu.bme.mit.mdsd.recipe.design/description/recipe.odesign#//@ownedViewpoints[name='recipe']/@ownedRepresentations[name='Recipe']/@defaultLayer/@nodeMappings[name='ToolNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/hu.bme.mit.mdsd.recipe.design/description/recipe.odesign#//@ownedViewpoints[name='recipe']/@ownedRepresentations[name='Recipe']/@defaultLayer/@nodeMappings[name='ToolNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_pcg5MLfdEeufAe1TlkgXpQ" name="put" outgoingEdges="_pcnm4LfdEeufAe1TlkgXpQ _pcqqMLfdEeufAe1TlkgXpQ" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="recipe:ContainmentRelation" href="example.recipe#//@actions.0"/>
+      <semanticElements xmi:type="recipe:ContainmentRelation" href="example.recipe#//@actions.0"/>
+      <ownedStyle xmi:type="diagram:Lozenge" uid="_pcg5MbfdEeufAe1TlkgXpQ" labelSize="12" labelPosition="node">
+        <description xmi:type="style:LozengeNodeDescription" href="platform:/resource/hu.bme.mit.mdsd.recipe.design/description/recipe.odesign#//@ownedViewpoints[name='recipe']/@ownedRepresentations[name='Recipe']/@defaultLayer/@nodeMappings[name='ContainmentActionNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/hu.bme.mit.mdsd.recipe.design/description/recipe.odesign#//@ownedViewpoints[name='recipe']/@ownedRepresentations[name='Recipe']/@defaultLayer/@nodeMappings[name='ContainmentActionNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_pchgQbfdEeufAe1TlkgXpQ" name="put" outgoingEdges="_pcpcELfdEeufAe1TlkgXpQ _pcrRQrfdEeufAe1TlkgXpQ" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="recipe:ContainmentRelation" href="example.recipe#//@actions.1"/>
+      <semanticElements xmi:type="recipe:ContainmentRelation" href="example.recipe#//@actions.1"/>
+      <ownedStyle xmi:type="diagram:Lozenge" uid="_pciHULfdEeufAe1TlkgXpQ" labelSize="12" labelPosition="node">
+        <description xmi:type="style:LozengeNodeDescription" href="platform:/resource/hu.bme.mit.mdsd.recipe.design/description/recipe.odesign#//@ownedViewpoints[name='recipe']/@ownedRepresentations[name='Recipe']/@defaultLayer/@nodeMappings[name='ContainmentActionNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/hu.bme.mit.mdsd.recipe.design/description/recipe.odesign#//@ownedViewpoints[name='recipe']/@ownedRepresentations[name='Recipe']/@defaultLayer/@nodeMappings[name='ContainmentActionNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_pcnm4LfdEeufAe1TlkgXpQ" sourceNode="_pcg5MLfdEeufAe1TlkgXpQ" targetNode="_pcec8LfdEeufAe1TlkgXpQ">
+      <target xmi:type="recipe:ContainmentRelation" href="example.recipe#//@actions.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_pcoN8LfdEeufAe1TlkgXpQ" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/hu.bme.mit.mdsd.recipe.design/description/recipe.odesign#//@ownedViewpoints[name='recipe']/@ownedRepresentations[name='Recipe']/@defaultLayer/@edgeMappings[name='ContainmentActionToolEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_pcoN8bfdEeufAe1TlkgXpQ" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/hu.bme.mit.mdsd.recipe.design/description/recipe.odesign#//@ownedViewpoints[name='recipe']/@ownedRepresentations[name='Recipe']/@defaultLayer/@edgeMappings[name='ContainmentActionToolEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_pcpcELfdEeufAe1TlkgXpQ" sourceNode="_pchgQbfdEeufAe1TlkgXpQ" targetNode="_pcec8LfdEeufAe1TlkgXpQ">
+      <target xmi:type="recipe:ContainmentRelation" href="example.recipe#//@actions.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_pcpcEbfdEeufAe1TlkgXpQ" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/hu.bme.mit.mdsd.recipe.design/description/recipe.odesign#//@ownedViewpoints[name='recipe']/@ownedRepresentations[name='Recipe']/@defaultLayer/@edgeMappings[name='ContainmentActionToolEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_pcpcErfdEeufAe1TlkgXpQ" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/hu.bme.mit.mdsd.recipe.design/description/recipe.odesign#//@ownedViewpoints[name='recipe']/@ownedRepresentations[name='Recipe']/@defaultLayer/@edgeMappings[name='ContainmentActionToolEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_pcqqMLfdEeufAe1TlkgXpQ" sourceNode="_pcg5MLfdEeufAe1TlkgXpQ" targetNode="_pcKT4LfdEeufAe1TlkgXpQ">
+      <target xmi:type="recipe:ContainmentRelation" href="example.recipe#//@actions.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_pcqqMbfdEeufAe1TlkgXpQ" sourceArrow="InputArrow" targetArrow="NoDecoration" size="2" strokeColor="0,0,0">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/hu.bme.mit.mdsd.recipe.design/description/recipe.odesign#//@ownedViewpoints[name='recipe']/@ownedRepresentations[name='Recipe']/@defaultLayer/@edgeMappings[name='IngredientContainmentActionEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_pcqqMrfdEeufAe1TlkgXpQ" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/hu.bme.mit.mdsd.recipe.design/description/recipe.odesign#//@ownedViewpoints[name='recipe']/@ownedRepresentations[name='Recipe']/@defaultLayer/@edgeMappings[name='IngredientContainmentActionEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_pcrRQrfdEeufAe1TlkgXpQ" sourceNode="_pchgQbfdEeufAe1TlkgXpQ" targetNode="_pcaykLfdEeufAe1TlkgXpQ">
+      <target xmi:type="recipe:ContainmentRelation" href="example.recipe#//@actions.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_pcr4ULfdEeufAe1TlkgXpQ" sourceArrow="InputArrow" targetArrow="NoDecoration" size="2" strokeColor="0,0,0">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/hu.bme.mit.mdsd.recipe.design/description/recipe.odesign#//@ownedViewpoints[name='recipe']/@ownedRepresentations[name='Recipe']/@defaultLayer/@edgeMappings[name='IngredientContainmentActionEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_pcr4UbfdEeufAe1TlkgXpQ" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/hu.bme.mit.mdsd.recipe.design/description/recipe.odesign#//@ownedViewpoints[name='recipe']/@ownedRepresentations[name='Recipe']/@defaultLayer/@edgeMappings[name='IngredientContainmentActionEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_MWGRwLffEeuQVo7iKFd5PQ" name="cook" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="recipe:StandardAction" href="example.recipe#//@actions.2"/>
+      <semanticElements xmi:type="recipe:StandardAction" href="example.recipe#//@actions.2"/>
+      <ownedStyle xmi:type="diagram:Lozenge" uid="_MWGRwbffEeuQVo7iKFd5PQ" labelSize="12" labelPosition="node">
+        <description xmi:type="style:LozengeNodeDescription" href="platform:/resource/hu.bme.mit.mdsd.recipe.design/description/recipe.odesign#//@ownedViewpoints[name='recipe']/@ownedRepresentations[name='Recipe']/@defaultLayer/@nodeMappings[name='StandardActionNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/hu.bme.mit.mdsd.recipe.design/description/recipe.odesign#//@ownedViewpoints[name='recipe']/@ownedRepresentations[name='Recipe']/@defaultLayer/@nodeMappings[name='StandardActionNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_MWHf4LffEeuQVo7iKFd5PQ" name="serve" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="recipe:StandardAction" href="example.recipe#//@actions.3"/>
+      <semanticElements xmi:type="recipe:StandardAction" href="example.recipe#//@actions.3"/>
+      <ownedStyle xmi:type="diagram:Lozenge" uid="_MWHf4bffEeuQVo7iKFd5PQ" labelSize="12" labelPosition="node">
+        <description xmi:type="style:LozengeNodeDescription" href="platform:/resource/hu.bme.mit.mdsd.recipe.design/description/recipe.odesign#//@ownedViewpoints[name='recipe']/@ownedRepresentations[name='Recipe']/@defaultLayer/@nodeMappings[name='StandardActionNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/hu.bme.mit.mdsd.recipe.design/description/recipe.odesign#//@ownedViewpoints[name='recipe']/@ownedRepresentations[name='Recipe']/@defaultLayer/@nodeMappings[name='StandardActionNode']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/hu.bme.mit.mdsd.recipe.design/description/recipe.odesign#//@ownedViewpoints[name='recipe']/@ownedRepresentations[name='Recipe']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_pbCSgLfdEeufAe1TlkgXpQ"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/hu.bme.mit.mdsd.recipe.design/description/recipe.odesign#//@ownedViewpoints[name='recipe']/@ownedRepresentations[name='Recipe']/@defaultLayer"/>
+    <target xmi:type="recipe:Recipe" href="example.recipe#/"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>

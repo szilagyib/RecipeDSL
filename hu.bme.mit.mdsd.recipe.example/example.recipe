@@ -1,0 +1,16 @@
+// a recept neve:
+'Boiled eggs'
+     ----  // <-- ez nem kötelezõ ide
+
+// ingredientek listája
+* 4 PIECE eggs
+* 10 DECILITER water
+
+// egy container deklaráció (kapacitással) és egy pár containment relation
+take Pot : 20 DECILITER
+eggs => Pot
+water => Pot
+
+// ezek akciók
+cook
+serve

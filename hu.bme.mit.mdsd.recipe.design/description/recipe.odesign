@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:validation="http://www.eclipse.org/sirius/description/validation/1.1.0" name="recipe" version="12.0.0.2017041100">
+  <ownedViewpoints name="recipe" modelFileExtension="recipe">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="Recipe" domainClass="Recipe">
+      <metamodel href="hu.bme.mit.mdsd.recipe#/"/>
+      <validationSet>
+        <ownedRules xsi:type="validation:SemanticValidationRule" name="UnnamedIngredientValidation" message="Unnamed ingredient!" targetClass="Ingredient">
+          <audits auditExpression="[name &lt;> 'newIngredient'/]"/>
+          <fixes>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="potato"/>
+            </initialOperation>
+          </fixes>
+        </ownedRules>
+        <ownedRules xsi:type="validation:SemanticValidationRule" name="UnnamedContainerValidation" message="Unnamed container!" targetClass="Container">
+          <audits auditExpression="[name &lt;> 'newContainer'/]"/>
+          <fixes>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="pot"/>
+            </initialOperation>
+          </fixes>
+        </ownedRules>
+        <ownedRules xsi:type="validation:SemanticValidationRule" name="UnnamedActionValidation" message="Unnamed action!" targetClass="StandardAction">
+          <audits auditExpression="[name &lt;> 'newAction'/]"/>
+          <fixes>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="cut"/>
+            </initialOperation>
+          </fixes>
+        </ownedRules>
+        <ownedRules xsi:type="validation:SemanticValidationRule" name="NegativeAmountValidation" level="WARNING" message="Negative amount!" targetClass="Amount">
+          <audits auditExpression="[amount > 0/]"/>
+          <fixes>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:SetValue" featureName="amount" valueExpression="1"/>
+            </initialOperation>
+          </fixes>
+        </ownedRules>
+        <ownedRules xsi:type="validation:SemanticValidationRule" name="NegativeTimeValidation" level="WARNING" message="Negative time!" targetClass="TimeTrigger">
+          <audits auditExpression="[minutes > 0/]"/>
+          <fixes>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:SetValue" featureName="minutes" valueExpression="10"/>
+            </initialOperation>
+          </fixes>
+        </ownedRules>
+      </validationSet>
+      <defaultLayer name="Default">
+        <nodeMappings name="StandardActionNode" labelDirectEdit="//@ownedViewpoints[name='recipe']/@ownedRepresentations[name='Recipe']/@defaultLayer/@toolSections.0/@ownedTools[name='EditName']" domainClass="StandardAction">
+          <style xsi:type="style:LozengeNodeDescription" labelSize="12" showIcon="false" sizeComputationExpression="12" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_red']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="ConditionTriggerNode" labelDirectEdit="//@ownedViewpoints[name='recipe']/@ownedRepresentations[name='Recipe']/@defaultLayer/@toolSections.0/@ownedTools[name='EditConditionTrigger']" domainClass="ConditionTrigger">
+          <style xsi:type="style:SquareDescription" borderSizeComputationExpression="1" borderLineStyle="dash" labelSize="12" showIcon="false" labelExpression="feature:condition" sizeComputationExpression="4" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="TimeTriggerNode" labelDirectEdit="//@ownedViewpoints[name='recipe']/@ownedRepresentations[name='Recipe']/@defaultLayer/@toolSections.0/@ownedTools[name='EditTimeTrigger']" domainClass="TimeTrigger">
+          <style xsi:type="style:SquareDescription" borderSizeComputationExpression="1" borderLineStyle="dash" labelSize="12" showIcon="false" labelExpression="feature:minutes" sizeComputationExpression="4" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+          </style>
+        </nodeMappings>
+        <edgeMappings name="ContainerActionEdge" sourceMapping="//@ownedViewpoints[name='recipe']/@ownedRepresentations[name='Recipe']/@defaultLayer/@nodeMappings[name='StandardActionNode']" targetMapping="//@ownedViewpoints[name='recipe']/@ownedRepresentations[name='Recipe']/@defaultLayer/@containerMappings[name='ContainerContainer']" targetFinderExpression="feature:tool">
+          <style sourceArrow="InputArrow" targetArrow="NoDecoration" sizeComputationExpression="2" endsCentering="Both">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="ActionTriggerEdge" sourceMapping="//@ownedViewpoints[name='recipe']/@ownedRepresentations[name='Recipe']/@defaultLayer/@edgeMappings[name='ActionActionEdge']" targetMapping="//@ownedViewpoints[name='recipe']/@ownedRepresentations[name='Recipe']/@defaultLayer/@nodeMappings[name='ConditionTriggerNode'] //@ownedViewpoints[name='recipe']/@ownedRepresentations[name='Recipe']/@defaultLayer/@nodeMappings[name='TimeTriggerNode']" targetFinderExpression="feature:trigger">
+          <style lineStyle="dash" targetArrow="NoDecoration" endsCentering="Both">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="IngredientContainerEdge" sourceMapping="//@ownedViewpoints[name='recipe']/@ownedRepresentations[name='Recipe']/@defaultLayer/@containerMappings[name='IngredientContainer']" targetMapping="//@ownedViewpoints[name='recipe']/@ownedRepresentations[name='Recipe']/@defaultLayer/@containerMappings[name='ContainerContainer']" targetFinderExpression="feature:container" sourceFinderExpression="feature:ingredient" domainClass="ContainmentRelation" useDomainElement="true">
+          <style sizeComputationExpression="2" endsCentering="Both">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <centerLabelStyleDescription showIcon="false" labelExpression="put">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="ActionActionEdge" sourceMapping="//@ownedViewpoints[name='recipe']/@ownedRepresentations[name='Recipe']/@defaultLayer/@nodeMappings[name='StandardActionNode']" targetMapping="//@ownedViewpoints[name='recipe']/@ownedRepresentations[name='Recipe']/@defaultLayer/@nodeMappings[name='StandardActionNode']" targetFinderExpression="feature:next" sourceFinderExpression="feature:prev" domainClass="SuccessionRelation" useDomainElement="true">
+          <style sizeComputationExpression="2" endsCentering="Both">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <containerMappings name="IngredientContainer" labelDirectEdit="//@ownedViewpoints[name='recipe']/@ownedRepresentations[name='Recipe']/@defaultLayer/@toolSections.0/@ownedTools[name='EditName']" domainClass="AtomicIngredient" childrenPresentation="List">
+          <subNodeMappings name="IAmountNode" labelDirectEdit="//@ownedViewpoints[name='recipe']/@ownedRepresentations[name='Recipe']/@defaultLayer/@toolSections.0/@ownedTools[name='EditAmount']" semanticCandidatesExpression="feature:amount" domainClass="Amount">
+            <style xsi:type="style:BundledImageDescription" showIcon="false" labelExpression="feature:amount" labelAlignment="LEFT" labelPosition="node" resizeKind="NSEW" shape="dot">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </subNodeMappings>
+          <subNodeMappings name="IUnitNode" labelDirectEdit="//@ownedViewpoints[name='recipe']/@ownedRepresentations[name='Recipe']/@defaultLayer/@toolSections.0/@ownedTools[name='EditUnit']" semanticCandidatesExpression="feature:amount" domainClass="Amount">
+            <style xsi:type="style:BundledImageDescription" showIcon="false" labelExpression="feature:unit" labelAlignment="LEFT" labelPosition="node" resizeKind="NSEW" shape="dot">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </subNodeMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" showIcon="false" widthComputationExpression="12" heightComputationExpression="6" backgroundStyle="GradientTopToBottom">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
+          </style>
+        </containerMappings>
+        <containerMappings name="ContainerContainer" labelDirectEdit="//@ownedViewpoints[name='recipe']/@ownedRepresentations[name='Recipe']/@defaultLayer/@toolSections.0/@ownedTools[name='EditName']" domainClass="Container" childrenPresentation="List">
+          <subNodeMappings name="CAmountNode" labelDirectEdit="//@ownedViewpoints[name='recipe']/@ownedRepresentations[name='Recipe']/@defaultLayer/@toolSections.0/@ownedTools[name='EditAmount']" semanticCandidatesExpression="feature:capacity" domainClass="Amount">
+            <style xsi:type="style:BundledImageDescription" showIcon="false" labelExpression="feature:amount" labelAlignment="LEFT" labelPosition="node" resizeKind="NSEW" shape="dot">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </subNodeMappings>
+          <subNodeMappings name="CUnitNode" labelDirectEdit="//@ownedViewpoints[name='recipe']/@ownedRepresentations[name='Recipe']/@defaultLayer/@toolSections.0/@ownedTools[name='EditUnit']" semanticCandidatesExpression="feature:capacity" domainClass="Amount">
+            <style xsi:type="style:BundledImageDescription" showIcon="false" labelExpression="feature:unit" labelAlignment="LEFT" labelPosition="node" resizeKind="NSEW" shape="dot">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </subNodeMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" iconPath="/hu.bme.mit.mdsd.recipe.design/icons/pot32.png" widthComputationExpression="3">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_yellow']"/>
+          </style>
+        </containerMappings>
+        <toolSections>
+          <ownedTools xsi:type="tool_1:ContainerCreationDescription" name="Ingredient" containerMappings="//@ownedViewpoints[name='recipe']/@ownedRepresentations[name='Recipe']/@defaultLayer/@containerMappings[name='IngredientContainer']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool:CreateInstance" typeName="AtomicIngredient" referenceName="ingredients">
+                  <subModelOperations xsi:type="tool:ChangeContext" browseExpression="var:instance">
+                    <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="newIngredient"/>
+                    <subModelOperations xsi:type="tool:CreateInstance" typeName="Amount" referenceName="amount">
+                      <subModelOperations xsi:type="tool:ChangeContext" browseExpression="var:instance">
+                        <subModelOperations xsi:type="tool:SetValue" featureName="amount" valueExpression="2"/>
+                        <subModelOperations xsi:type="tool:SetValue" featureName="unit" valueExpression="PIECE"/>
+                      </subModelOperations>
+                    </subModelOperations>
+                  </subModelOperations>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:ContainerCreationDescription" name="Container" containerMappings="//@ownedViewpoints[name='recipe']/@ownedRepresentations[name='Recipe']/@defaultLayer/@containerMappings[name='ContainerContainer']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool:CreateInstance" typeName="Container" referenceName="tools">
+                  <subModelOperations xsi:type="tool:ChangeContext" browseExpression="var:instance">
+                    <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="newContainer"/>
+                    <subModelOperations xsi:type="tool:CreateInstance" typeName="Amount" referenceName="capacity">
+                      <subModelOperations xsi:type="tool:ChangeContext" browseExpression="var:instance">
+                        <subModelOperations xsi:type="tool:SetValue" featureName="amount" valueExpression="50"/>
+                        <subModelOperations xsi:type="tool:SetValue" featureName="unit" valueExpression="DECILITER"/>
+                      </subModelOperations>
+                    </subModelOperations>
+                  </subModelOperations>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:NodeCreationDescription" name="Action" nodeMappings="//@ownedViewpoints[name='recipe']/@ownedRepresentations[name='Recipe']/@defaultLayer/@nodeMappings[name='StandardActionNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool:CreateInstance" typeName="StandardAction" referenceName="actions">
+                  <subModelOperations xsi:type="tool:ChangeContext" browseExpression="var:instance">
+                    <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="newAction"/>
+                  </subModelOperations>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:EdgeCreationDescription" name="IngredientToContainer" edgeMappings="//@ownedViewpoints[name='recipe']/@ownedRepresentations[name='Recipe']/@defaultLayer/@edgeMappings[name='IngredientContainerEdge']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ExternalJavaAction" name="containmentReletaionJavaAction" id="hu.bme.mit.mdsd.recipe.design.CreateContainmentRelationOperation">
+                <parameters name="source" value="var:source"/>
+                <parameters name="target" value="var:target"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:EdgeCreationDescription" name="ActionToAction" edgeMappings="//@ownedViewpoints[name='recipe']/@ownedRepresentations[name='Recipe']/@defaultLayer/@edgeMappings[name='ActionActionEdge']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ExternalJavaAction" name="successionReletaionJavaAction" id="hu.bme.mit.mdsd.recipe.design.CreateSuccessionRelationOperation">
+                <parameters name="source" value="var:source"/>
+                <parameters name="target" value="var:target"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:DirectEditLabel" name="EditName">
+            <mask mask="{0}"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="var:0"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:DirectEditLabel" name="EditAmount">
+            <mask mask="{0}"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:SetValue" featureName="amount" valueExpression="var:0"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:DirectEditLabel" name="EditUnit">
+            <mask mask="{0}"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:SetValue" featureName="unit" valueExpression="var:0"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:DirectEditLabel" name="EditTimeTrigger">
+            <mask mask="{0}"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:SetValue" featureName="minutes" valueExpression="var:0"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:DirectEditLabel" name="EditConditionTrigger">
+            <mask mask="{0}"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:SetValue" featureName="condition" valueExpression="var:0"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:NodeCreationDescription" name="TimeTrigger" nodeMappings="//@ownedViewpoints[name='recipe']/@ownedRepresentations[name='Recipe']/@defaultLayer/@nodeMappings[name='TimeTriggerNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool:CreateInstance" typeName="TimeTrigger" referenceName="tempTriggers">
+                  <subModelOperations xsi:type="tool:ChangeContext" browseExpression="var:instance">
+                    <subModelOperations xsi:type="tool:SetValue" featureName="minutes" valueExpression="0"/>
+                  </subModelOperations>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:NodeCreationDescription" name="ConditionTrigger" nodeMappings="//@ownedViewpoints[name='recipe']/@ownedRepresentations[name='Recipe']/@defaultLayer/@nodeMappings[name='ConditionTriggerNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool:CreateInstance" typeName="ConditionTrigger" referenceName="tempTriggers">
+                  <subModelOperations xsi:type="tool:ChangeContext" browseExpression="var:instance">
+                    <subModelOperations xsi:type="tool:SetValue" featureName="condition" valueExpression="-"/>
+                  </subModelOperations>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:EdgeCreationDescription" name="TrigerToAction" edgeMappings="//@ownedViewpoints[name='recipe']/@ownedRepresentations[name='Recipe']/@defaultLayer/@edgeMappings[name='ActionTriggerEdge']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:SetValue" featureName="trigger" valueExpression="var:target"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:EdgeCreationDescription" name="ContainerToAction" edgeMappings="//@ownedViewpoints[name='recipe']/@ownedRepresentations[name='Recipe']/@defaultLayer/@edgeMappings[name='ContainerActionEdge']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:SetValue" featureName="tool" valueExpression="var:target"/>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+    </ownedRepresentations>
+    <ownedJavaExtensions qualifiedClassName="hu.bme.mit.mdsd.recipe.design.Services"/>
+  </ownedViewpoints>
+</description:Group>

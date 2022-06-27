@@ -1,0 +1,8 @@
+src-gen/
+xtend-gen/
+bin/
+.settings/
+
+# generated resources
+hu.bme.mit.mdsd.recipe.edit/
+hu.bme.mit.mdsd.recipe.editor/
