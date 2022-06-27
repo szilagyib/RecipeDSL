@@ -1,6 +1,12 @@
 Receptleíró nyelv
 ================
 
+MDSD féléves feladat.
+
+<ins>Készítette:</ins> Szilágyi Borbála, Péter Bertalan Zoltán
+
+### Leírás
+
 Modellezési nyelv receptek magas szintű leírására. Segítségével
 gyorsabban, egyszerűbben, intuitív módon írhatók le receptek (ld lejjebb
 a _szöveges szintaxis_, illetve _grafikus szintaxis_ részeknél), mint
